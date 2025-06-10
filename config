@@ -105,11 +105,12 @@ bindsym $mod+Shift+space floating toggle
 # change focus between tiling / floating windows
 bindsym $mod+m focus mode_toggle
 
-# focus the parent container
-bindsym $mod+a focus parent
+# Set border keymap
+bindsym $mod+b border toggle
 
-# focus the child container
-#bindsym $mod+d focus child
+# Set default bortder to none
+default_border none
+
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -191,6 +192,10 @@ bar {
 # Command execution
 exec --no-startup-id picom -b
 
-# For Unity Editor popups
+# Classes
 assign [class="Unity"] workspace number 1
 assign [class = "UnrealEditor"] workspace number 1
+assign [class = "obsidian"] workspace number 10
+assign [class = "spotify"] workspace number 9
+assign [class = "Spotify"] workspace number 9
+assign [class = "Google-chrome"] workspace number 4
