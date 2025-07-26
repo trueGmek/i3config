@@ -207,7 +207,7 @@ bar {
 }
 
 # Command execution
-exec --no-startup-id picom -b
+exec --no-startup-id picom -b --no-fading-openclose
 
 # Classes
 assign [class="Unity"] workspace number 1
